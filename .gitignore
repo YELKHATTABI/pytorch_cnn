@@ -1,0 +1,20 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# hidden files and folders
+.DS_Store
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.venv/
+
+# pytorch
+runs/
+
+# pdfs
+*.pdf
+
+# pptx
+*.pptx
