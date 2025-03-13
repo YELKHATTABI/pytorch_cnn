@@ -1,4 +1,4 @@
-""" 
+"""
 This file has the definition of the different cnn models that we can use
 
 """
@@ -29,7 +29,5 @@ class SimpleCNN(nn.Module):
         x = F.relu(x)  # 14x14x25
         x = self.pool(x)  # 14x14x24 -> 7x7x24
         x = x.view(-1, 7 * 7 * 24)  # flatten
-        x = self.fc1(x) # 7 x 7 x 24 -> 10
+        x = self.fc1(x)  # 7 x 7 x 24 -> 10
         return x
-
-# to process the output of the model, we add a softmax layer to get probabilities
